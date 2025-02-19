@@ -1,10 +1,151 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Welcome to My GitHub Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farron Jones | Software Developer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden; 
+        }
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            background-color: #1e1e1e;
+            box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+        }
+        h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+        h2 {
+            color: #00c3ff;
+        }
+        section {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #1e1e1e;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+        }
+        a {
+            color: #00c3ff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .repo-list li {
+            margin: 10px 0;
+        }
+        .contact {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .resume-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+        iframe {
+            width: 100%;
+            height: 500px;
+            border: none;
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+        
+        .coding-icons {
+            position: fixed;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 10;
+            width: 100px;
+            animation: float 3s ease-in-out infinite alternate;
+        }
+        .left-icons {
+            left: 20px;
+        }
+        .right-icons {
+            right: 20px;
+        }
+        .coding-icons img {
+            display: block;
+            width: 80px;
+            height: auto;
+            margin: 15px 0;
+            filter: drop-shadow(0px 0px 10px rgba(0, 255, 255, 0.6));
+            animation: fadeIn 2s ease-in-out;
+        }
+        @keyframes float {
+            0% { transform: translateY(-50%) translateX(0); }
+            100% { transform: translateY(-50%) translateX(10px); }
+        }
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: scale(0.8); }
+            100% { opacity: 1; transform: scale(1); }
+        }
+    </style>
 </head>
 <body>
-<h1>Welcome to My Portfolio</h1>
-<p>This is my personal portfolio showcasing my work.</p>
+
+    <header>
+        <h1>Farron Jones</h1>
+        <p>Senior Computer Science Student | Software Developer | Problem Solver</p>
+    </header>
+
+    <div class="coding-icons left-icons">
+        <img src="https://wiki.socr.umich.edu/images/a/a2/JAVA_animated.gif" alt="Java">
+        <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExeHZmOGpsbGhpMXZzNTc1eTIzNXAzZG1hdGJyY214MjdwM3FhOXduZyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/SvFocn0wNMx0iv2rYz/giphy.gif" alt="JavaScript">
+        <img src="https://media3.giphy.com/media/YOczfjtC0H0IMBKhRf/200w.gif?cid=6c09b952tx6yczra8r8qozft8v405pakf0y93rjaqzdt689f&ep=v1_gifs_search&rid=200w.gif&ct=g" alt="HTML">
+    </div>
+
+    <div class="coding-icons right-icons">
+        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/hd/e69ab290704783.5e39e8ad5f86f.gif" alt="Node.js">
+        <img src="https://media1.giphy.com/media/eNAsjO55tPbgaor7ma/giphy.gif?cid=6c09b952md9km6pshgah849b0nj3f1op9x6n2ul0zimndaxh&ep=v1_stickers_search&rid=giphy.gif&ct=s" alt="React">
+        <img src="https://media2.giphy.com/media/vISmwpBJUNYzukTnVx/100.gif?cid=6c09b952u5ferl3puvvt7n9n75v44ewyv24y1tqx46qj26nm&ep=v1_gifs_search&rid=100.gif&ct=g" alt="SQL">
+    </div>
+
+    <section>
+        <h2>👨‍💻 About Me</h2>
+        <p>
+            Hi, I’m <strong>Farron Jones</strong>, a <strong>senior Computer Science student</strong> at Saint Xavier University with a passion for <strong>software development and problem-solving</strong>. 
+            I specialize in <strong>Java</strong> and enjoy working on innovative solutions.
+        </p>
+        <p>
+            I've developed <strong>AI chatbots</strong>, <strong>game projects</strong>, and explored <strong>data security & system design</strong> through internships and personal projects.
+            My goal is to become a <strong>versatile backend developer</strong> with strong data analytics and system architecture skills.
+        </p>
+    </section>
+
+    <section>
+        <h2>📂 My Projects</h2>
+        <ul class="repo-list">
+            <li>🔗 <a href="https://github.com/FarronJones/learning-git" target="_blank">Learning Git</a></li>
+            <li>🔗 <a href="https://github.com/FarronJones/PersonalProject" target="_blank">Personal Project</a></li>
+            <li>🔗 <a href="https://github.com/FarronJones/QuantumBotCore" target="_blank">QuantumBot Core</a></li>
+            <li>🔗 <a href="https://github.com/FarronJones/CosmoChatUI" target="_blank">CosmoChat UI</a></li>
+            <li>🔗 <a href="https://github.com/FarronJones/kai-platform-test" target="_blank">Kai Platform Test</a></li>
+        </ul>
+    </section>
+
+    <section class="resume-container">
+        <h2>📜 Resume</h2>
+        <p>🔗 <a href="https://raw.githubusercontent.com/FarronJones/Resume/main/FarronResume.pdf" target="_blank">View Resume</a></p>
+        <embed src="https://github.com/FarronJones/Resume/raw/main/FarronResume.pdf" width="100%" height="500px" type="application/pdf">
+    </section>
+
+    <section class="contact">
+        <h2>📞 Contact Me</h2>
+        <p>📧 Email: <a href="mailto:jones.f03@mymail.sxu.edu">jones.f03@mymail.sxu.edu</a></p>
+        <p>📱 Phone: <a href="tel:7737496816">(773) 749-6816</a></p>
+    </section>
+
 </body>
 </html>
